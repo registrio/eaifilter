@@ -4,7 +4,10 @@ EAI filter for postfix
 This filter check for the receiving mail server if it supports SMTPUTF8, if it does not support it will rewrite the FROM Address with ASCII only that is aliased to the sender email.
 
 
-How to use
+# How to use
+
+Copy eaifilter.php in /etc/postfix 
+Change to root 
 
 
 # master.cf
