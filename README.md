@@ -7,7 +7,7 @@ This filter check for the receiving mail server if it supports SMTPUTF8, if it d
 How to use
 
 
-master.cf*
+# master.cf
 
 ```
 smtp      inet  n       -       n       -       -       smtpd  -o content_filter=eaifilter -o receive_override_options=no_header_body_checks
