@@ -7,11 +7,11 @@ This filter check for the receiving mail server if it supports SMTPUTF8, if it d
 How to use
 
 
-master.cf
+master.cf*
 
+```
 smtp      inet  n       -       n       -       -       smtpd  -o content_filter=eaifilter -o receive_override_options=no_header_body_checks
 eaifilter unix - n n - - pipe flags=RXhu user=nobody argv=/etc/postfix/eaifilter.php -f ${sender} -d ${recipient}
-
 127.0.0.1:10025   inet  n       -       n       -       -        smtpd
         -o content_filter=
         -o receive_override_options=no_unknown_recipient_checks,no_header_body_checks,no_milters
@@ -23,5 +23,10 @@ eaifilter unix - n n - - pipe flags=RXhu user=nobody argv=/etc/postfix/eaifilter
         -o smtpd_recipient_restrictions=permit_mynetworks,reject
         -o mynetworks_style=host
         -o in_flow_delay=0
+```
 
+# main.cf
+
+``` myhook_destination_recipient_limit=1
+```
 
