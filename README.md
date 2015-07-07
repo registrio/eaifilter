@@ -28,6 +28,6 @@ eaifilter unix - n n - - pipe flags=RXhu user=nobody argv=/etc/postfix/eaifilter
 # main.cf
 
 ``` 
-myhook_destination_recipient_limit=1
+eaifilter_destination_recipient_limit=1
 ```
 
