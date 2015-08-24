@@ -1,3 +1,8 @@
+# EAI Wiki
+
+http://interlab.ait.asia/eai-wiki/
+
+
 # eaifilter
 EAI filter for postfix 
 
