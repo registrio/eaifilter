@@ -1,6 +1,6 @@
 # EAI Wiki
 
-http://interlab.ait.asia/eai-wiki/
+http://guides.thnic.or.th/eai-setup-guidelines/index.php/Main_Page
 
 
 # eaifilter
